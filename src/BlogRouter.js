@@ -21,7 +21,7 @@ const BlogRouter = () => {
         <Route exact path="/posts/create">
           <CreatePost />
         </Route>
-        <Route exact path="/posts/:postId">
+        <Route path="/posts/:postId">
           <ShowPost />
         </Route>
       </Switch>

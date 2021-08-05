@@ -1,0 +1,55 @@
+.ShowPost {
+    padding: 2rem;
+    display: block;
+    position: relative;
+}
+
+.ShowImg img {
+    width: 100%;
+    height: auto;
+}
+
+.Title {
+    font-size: 1.5rem;
+    color: rgb(138, 138, 138);
+    background: rgb(238, 248, 238);
+}
+
+.Button {
+    color: red;
+    background-color: rgb(255, 223, 223);
+    padding: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.Body {
+    margin: 1rem 0;
+    text-align: left;
+
+}
+
+.Deleted {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TextDeleted {
+    color: red;
+    background-color: rgb(255, 199, 199);
+    padding: 2rem
+}
+
+@media(min-width : 900px) {
+    .ShowPost {
+        display: flex;
+
+    }
+
+    .Body {
+        padding: 1rem;
+    }
+}
