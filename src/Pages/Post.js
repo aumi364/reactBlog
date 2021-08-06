@@ -10,7 +10,10 @@ const Post = () => {
 
   useEffect(() => {
     let localToggler = localStorage.getItem("toggler");
-    if (localToggler) {
+    let payload = localStorage.getItem("payload");
+    //check if both available in local storage
+    if (localToggler && payload) {
+      // check if user committed a post request
       if (localToggler !== toggle.toString()) {
         (async () => {
           const response = await getPosts();
@@ -23,7 +26,7 @@ const Post = () => {
           }
         })();
       } else {
-        const data = JSON.parse(localStorage.getItem("payload"));
+        const data = JSON.parse(payload);
         setPosts(data);
       }
     } else {
