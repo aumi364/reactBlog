@@ -45,7 +45,7 @@ const ShowPost = () => {
           </div>
           <div>
             <button className={style.Button} onClick={deleteHandler(post.id)}>
-              X Delete Post
+              X Delete Post!
             </button>
           </div>
         </div>

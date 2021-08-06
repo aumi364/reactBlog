@@ -1,5 +1,4 @@
 const CapitalizeFirstLetter = (strngs) => {
-  console.log(strngs);
   let strngsArr = strngs.split(" ");
   for (let i = 0; i < strngsArr.length; i++) {
     strngsArr[i] =

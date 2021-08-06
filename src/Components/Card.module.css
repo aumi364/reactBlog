@@ -7,7 +7,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 1rem 0rem;
     position: relative;
-    cursor: pointer;
+    user-select: none;
 }
 
 .Card p {
@@ -35,11 +35,12 @@
 
 .CreateLink {
     margin: auto;
-    padding: 1rem;
-    background: rgb(92, 138, 112);
+
     cursor: pointer;
 }
 
 .CreateLink a {
     color: white;
+    padding: 1rem;
+    background: rgb(92, 138, 112);
 }

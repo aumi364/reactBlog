@@ -26,4 +26,17 @@ const deletePost = async (id) => {
     return error.response;
   }
 };
-export { getPosts, showPost, deletePost };
+const createPost = async (data) => {
+  try {
+    const response = await Axios.post(url, data, {
+      headers: {
+        "Content-type": "application/json",
+      },
+    });
+
+    return response;
+  } catch (error) {
+    return error.response;
+  }
+};
+export { getPosts, showPost, deletePost, createPost };

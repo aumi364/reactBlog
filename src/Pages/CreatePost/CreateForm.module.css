@@ -1,0 +1,65 @@
+.PostForm {
+    padding: 1rem;
+    background: rgb(205, 228, 199);
+    margin: auto;
+}
+
+.Input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.Input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.Errors {
+    margin: 0;
+    padding: .5rem;
+    text-align: left;
+    color: rgb(126, 24, 24);
+}
+
+.Button {
+
+    background-color: rgb(204, 255, 194);
+    padding: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.Submitted {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Submitted p {
+    color: rgb(23, 151, 66);
+    background-color: rgb(217, 255, 225);
+    padding: 2rem
+}
+
+@media(min-width : 900px) {
+    .PostForm {
+        width: 50%;
+    }
+}
