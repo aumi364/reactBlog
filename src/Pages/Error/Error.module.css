@@ -1,0 +1,7 @@
+.Error {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(153, 153, 153);
+}

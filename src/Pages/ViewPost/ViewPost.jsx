@@ -29,7 +29,7 @@ const ViewPost = () => {
           </div>
         </div>
       ) : (
-        <Error />
+        <Error status={error} />
       )}
     </>
   );

@@ -50,7 +50,7 @@ const ShowPost = () => {
           </div>
         </div>
       )}
-      {error && <Error />}
+      {error && <Error status={error} />}
       {!error && deleted && (
         <div className={style.Deleted}>
           <p className={style.TextDeleted}>The post has been deleted.</p>
